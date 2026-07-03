@@ -1,62 +1,187 @@
 # 🛒 E-Commerce Sales Analysis
 
-An end-to-end **E-Commerce Sales Analysis** project built using **Python, Pandas, Matplotlib, Seaborn, Plotly, and Power BI**. This project analyzes the **UCI Online Retail II Dataset** to uncover actionable business insights through data cleaning, exploratory data analysis (EDA), customer segmentation, and interactive dashboards.
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge\&logo=python\&logoColor=white)](https://www.python.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge\&logo=pandas\&logoColor=white)](https://pandas.pydata.org/)
+[![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?style=for-the-badge\&logo=powerbi\&logoColor=black)](https://powerbi.microsoft.com/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![roadmap.sh](https://img.shields.io/badge/roadmap.sh-Project-blue?style=for-the-badge)](https://roadmap.sh/projects/ecommerce-data-analysis)
 
 ---
 
 ## 📌 Project Overview
 
-This project simulates a real-world business analytics workflow by transforming raw transactional data into meaningful insights. The dataset contains over 500,000 retail transactions from a UK-based online retailer, making it an excellent case study for data analysis and business intelligence.
+This project presents an end-to-end analysis of the **UCI Online Retail II Dataset** using Python and modern data analytics tools. It demonstrates the complete data analytics workflow—from raw transactional data to actionable business insights.
 
-The project demonstrates the complete analytics lifecycle, including:
-
-* Data Collection
-* Data Cleaning & Preprocessing
-* Exploratory Data Analysis (EDA)
-* Feature Engineering
-* Business KPI Analysis
-* Customer Segmentation
-* Product Performance Analysis
-* Interactive Data Visualization
-* Business Recommendations
+The project includes data cleaning, exploratory data analysis (EDA), feature engineering, business KPI analysis, customer segmentation, revenue analysis, and interactive visualizations to help understand customer purchasing behavior and sales performance.
 
 ---
 
-## 📊 Dataset
+## 🎯 Project Reference
+
+This repository is based on the **E-Commerce Data Analysis** project from **roadmap.sh**.
+
+**Project Link:** https://roadmap.sh/projects/ecommerce-data-analysis
+
+While following the original project requirements, this repository significantly extends the analysis by implementing advanced analytics techniques and business intelligence dashboards.
+
+---
+
+# 📊 Dataset
 
 **Dataset:** UCI Online Retail II Dataset
 
-The dataset contains transactional records of an online retail store, including:
+The dataset contains over **500,000 retail transactions** from a UK-based online retailer.
 
-| Column      | Description             |
-| ----------- | ----------------------- |
-| Invoice     | Invoice Number          |
-| StockCode   | Product Code            |
-| Description | Product Name            |
-| Quantity    | Quantity Purchased      |
-| InvoiceDate | Transaction Date & Time |
-| Price       | Unit Price              |
-| Customer ID | Customer Identifier     |
-| Country     | Customer Country        |
+### Features
 
----
-
-## 🎯 Objectives
-
-* Clean and preprocess raw transaction data.
-* Analyze customer purchasing behavior.
-* Identify top-performing products.
-* Discover revenue trends.
-* Analyze country-wise sales.
-* Perform customer segmentation using RFM Analysis.
-* Estimate Customer Lifetime Value (CLV).
-* Conduct Cohort Analysis.
-* Categorize products using ABC Analysis.
-* Build interactive dashboards for business decision-making.
+* Invoice Number
+* Stock Code
+* Product Description
+* Quantity
+* Invoice Date
+* Unit Price
+* Customer ID
+* Country
 
 ---
 
-## 🛠️ Technologies Used
+# 🎯 Objectives
+
+* Clean messy transactional data
+* Handle missing values and invalid records
+* Remove cancelled invoices
+* Create business KPIs
+* Calculate Revenue
+* Analyze customer purchasing behavior
+* Discover sales trends
+* Identify top-performing products
+* Build interactive dashboards
+* Generate business recommendations
+
+---
+
+# 🚀 Features
+
+## ✅ Data Cleaning
+
+* Removed Missing Values
+* Removed Duplicate Records
+* Removed Cancelled Orders
+* Removed Free Products
+* Removed Invalid Quantities
+* Converted Date Columns
+* Created Revenue Column
+
+---
+
+## 📈 Exploratory Data Analysis
+
+* Dataset Overview
+* Missing Value Analysis
+* Revenue Distribution
+* Country Analysis
+* Customer Analysis
+* Product Analysis
+* Sales Trends
+* Monthly Revenue
+* Daily Revenue
+* Hourly Revenue
+
+---
+
+## 📊 Business KPIs
+
+* Total Revenue
+* Total Orders
+* Total Customers
+* Average Order Value
+* Average Basket Size
+* Products Sold
+
+---
+
+## 📉 Visualizations
+
+This project contains professional business visualizations including:
+
+* Top 10 Countries by Revenue
+* Monthly Revenue Trend
+* Daily Sales Trend
+* Revenue Distribution
+* Top Selling Products
+* Top Customers
+* Country-wise Revenue
+* Hourly Sales
+* Weekly Sales
+* Pareto Analysis
+* Revenue Heatmaps
+* Customer Spending Distribution
+
+---
+
+# 👥 Customer Analytics
+
+### RFM Segmentation
+
+Customer segmentation into:
+
+* Champions
+* Loyal Customers
+* Potential Loyalists
+* New Customers
+* At Risk
+* Can't Lose Them
+* Hibernating
+* Lost Customers
+
+---
+
+## 💰 Customer Lifetime Value (CLV)
+
+Estimate customer lifetime value using:
+
+* Purchase Frequency
+* Average Order Value
+* Customer Revenue
+* Customer Lifetime
+
+---
+
+## 📦 ABC Product Analysis
+
+Product categorization:
+
+* A Class Products
+* B Class Products
+* C Class Products
+
+---
+
+## 📅 Cohort Analysis
+
+Analyze customer retention and repeat purchasing behavior using monthly cohort analysis.
+
+---
+
+# 📊 Dashboard
+
+Interactive dashboard developed using:
+
+* Plotly
+* Power BI
+
+Dashboard includes:
+
+* Executive KPIs
+* Revenue Trends
+* Customer Insights
+* Product Insights
+* Country Analysis
+* Interactive Filters
+
+---
+
+# 🛠️ Technologies Used
 
 * Python
 * Pandas
@@ -67,11 +192,12 @@ The dataset contains transactional records of an online retail store, including:
 * Jupyter Notebook
 * Power BI
 * Tableau
-* Git & GitHub
+* Git
+* GitHub
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
 Ecommerce-Sales-Analysis/
@@ -98,151 +224,44 @@ Ecommerce-Sales-Analysis/
 
 ---
 
-## 🧹 Data Cleaning
+# 📌 Business Insights
 
-The following preprocessing steps were performed:
-
-* Removed missing values
-* Removed duplicate records
-* Converted InvoiceDate to datetime format
-* Removed cancelled invoices
-* Removed returned products
-* Removed free items
-* Removed invalid quantities
-* Created Revenue feature
-* Corrected data types
+* Revenue is highly concentrated among a small percentage of customers.
+* A limited number of products contribute to the majority of revenue.
+* Most revenue originates from a few countries.
+* Repeat customers significantly increase total revenue.
+* Customer segmentation helps identify high-value customers for targeted marketing campaigns.
+* Seasonal purchasing trends influence monthly sales performance.
 
 ---
 
-## 📈 Exploratory Data Analysis
+# 📷 Project Preview
 
-The analysis includes:
+Add screenshots of:
 
-* Dataset Overview
-* Missing Value Analysis
-* Revenue Distribution
-* Country-wise Revenue
-* Monthly Revenue Trend
-* Daily Sales Trend
-* Hourly Sales Trend
-* Customer Distribution
-* Product Distribution
-* Sales Heatmaps
+* Data Cleaning
+* Revenue Dashboard
+* Country Revenue Chart
+* Monthly Sales Trend
+* Customer Segmentation
+* Power BI Dashboard
+
+inside the **images/** folder.
 
 ---
 
-## 📊 Key Performance Indicators (KPIs)
-
-* Total Revenue
-* Total Orders
-* Total Customers
-* Average Order Value
-* Average Basket Size
-* Total Products Sold
-
----
-
-## 📉 Visualizations
-
-This project includes multiple business visualizations such as:
-
-* Top 10 Countries by Revenue
-* Monthly Revenue Trend
-* Revenue Distribution
-* Daily Sales Analysis
-* Hourly Sales Analysis
-* Weekday Sales Pattern
-* Top Selling Products
-* Top Customers
-* Country-wise Sales
-* Product Performance
-* Customer Spending Distribution
-* Pareto Analysis (80/20 Rule)
-
----
-
-## 👥 Customer Analytics
-
-### RFM Segmentation
-
-Customers are classified into:
-
-* Champions
-* Loyal Customers
-* Potential Loyalists
-* New Customers
-* At Risk
-* Can't Lose Them
-* Hibernating
-* Lost Customers
-
----
-
-## 💰 Customer Lifetime Value (CLV)
-
-The project estimates customer lifetime value using:
-
-* Purchase Frequency
-* Average Order Value
-* Customer Revenue
-* Estimated Lifetime Value
-
----
-
-## 📦 ABC Product Analysis
-
-Products are categorized into:
-
-* **A Class:** Top 80% Revenue
-* **B Class:** Next 15% Revenue
-* **C Class:** Remaining 5% Revenue
-
----
-
-## 📅 Cohort Analysis
-
-Customer retention is analyzed using monthly cohorts to understand repeat purchasing behavior and long-term customer engagement.
-
----
-
-## 📊 Dashboard
-
-The Power BI dashboard provides:
-
-* Executive KPIs
-* Revenue Trends
-* Country-wise Sales
-* Customer Insights
-* Product Performance
-* Interactive Filters
-* Drill-down Reports
-
----
-
-## 📌 Business Insights
-
-Key findings from the analysis include:
-
-* Revenue is concentrated among a small percentage of customers.
-* A limited number of products contribute significantly to total sales.
-* The majority of sales originate from a few countries.
-* Customer purchasing behavior follows seasonal patterns.
-* Repeat customers generate a substantial share of overall revenue.
-
----
-
-## 🚀 Future Improvements
+# 🚀 Future Improvements
 
 * Sales Forecasting
-* Demand Prediction
-* Recommendation System
 * Customer Churn Prediction
-* Profitability Analysis
-* Interactive Web Dashboard using Streamlit
+* Recommendation System
+* Streamlit Dashboard
+* Machine Learning Models
+* Real-time Sales Dashboard
 
 ---
 
-## 💻 Installation
+# ⚙️ Installation
 
 Clone the repository:
 
@@ -250,25 +269,25 @@ Clone the repository:
 git clone https://github.com/your-username/Ecommerce-Sales-Analysis.git
 ```
 
-Navigate to the project directory:
+Move into the project directory:
 
 ```bash
 cd Ecommerce-Sales-Analysis
 ```
 
-Install the required dependencies:
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the analysis:
+Run the project:
 
 ```bash
 python ecommerce_analysis.py
 ```
 
-Or open the Jupyter Notebook:
+Launch Jupyter Notebook:
 
 ```bash
 jupyter notebook
@@ -276,28 +295,22 @@ jupyter notebook
 
 ---
 
-## 📷 Preview
+# 🤝 Contributing
 
-> Add screenshots of your notebook, visualizations, and Power BI dashboard in the `images/` folder and reference them here.
-
----
-
-## 🤝 Contributing
-
-Contributions, feature requests, and suggestions are welcome. Feel free to fork the repository and submit a pull request.
+Contributions are welcome! Feel free to fork the repository, open an issue, or submit a pull request.
 
 ---
 
-## 📄 License
+# 📄 License
 
 This project is licensed under the MIT License.
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
-**Harsh Pandey**
+## Harsh Pandey
 
-**Aspiring Data Analyst | AI/ML Enthusiast | Python Developer**
+**Data Analyst | AI/ML Enthusiast | Python Developer**
 
-If you found this project useful, consider giving it a ⭐ on GitHub!
+⭐ If you found this project useful, consider giving it a star on GitHub!
